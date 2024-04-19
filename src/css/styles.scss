@@ -1,7 +1,7 @@
 @import url('./base/reset.scss');
 @import url('./base/base.scss');
 @import url('./base/normalize.scss');
-
+@import url('./header.scss');
 
   $black: #121417;
   $green: #4DC274;
@@ -21,5 +21,5 @@
   font-optical-sizing: 16px;
   font-weight: 400;
   font-style: normal;
-
+  color: $black;
 }
