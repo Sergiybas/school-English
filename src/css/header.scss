@@ -1,25 +1,28 @@
 .header {
-    
+    position: relative;
     display: flex;
 
-    
+
     align-items: center;
+
     @media screen and (min-width: 1280px) {
-            & {
-                padding: 20px 128px;
+        & {
+            padding: 20px 128px;
+            margin-bottom: 12px;
             display: block;
-            }
         }
+    }
 
 }
 
 .nav {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0px;
 
-    @media screen and (min-width: 1280px){
+    @media screen and (min-width: 1280px) {
         padding: 0;
     }
 
