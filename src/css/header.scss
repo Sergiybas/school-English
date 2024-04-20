@@ -1,16 +1,29 @@
 .header {
+    
     display: flex;
-    width: 1280px;
-    padding: 20px 128px;
+
+    
     align-items: center;
-    gap: 16px;
+    @media screen and (min-width: 1280px) {
+            & {
+                padding: 20px 128px;
+            display: block;
+            }
+        }
+
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex: 1 0 0;
+    padding: 20px 0px;
+
+    @media screen and (min-width: 1280px){
+        padding: 0;
+    }
+
+
 }
 
 .header-logo {
@@ -24,13 +37,19 @@
 }
 
 .nav-list {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 20px;
 
     font-size: 14px;
     font-weight: 600;
     line-height: 128.571%;
+
+    @media screen and (min-width: 1280px) {
+        & {
+            display: flex;
+        }
+    }
 
 }
 
@@ -43,9 +62,15 @@
 }
 
 .header-social {
-    display: flex;
+    display: none;
     align-items: flex-start;
     gap: 12px;
+
+    @media screen and (min-width: 1280px) {
+        & {
+            display: flex;
+        }
+    }
 }
 
 .header-social-href {
@@ -70,12 +95,10 @@
     }
 }
 
-button {}
-
 .menu {
     position: absolute;
-    top: 20px;
-    right: 46px;
+    top: 15px;
+    right: 20px;
     min-height: 40px;
     min-width: 28px;
     display: flex;
@@ -84,6 +107,12 @@ button {}
 
     margin: 0;
     outline: none;
+
+    @media screen and (min-width: 1280px) {
+        & {
+            display: none;
+        }
+    }
 }
 
 .menu-svg {
@@ -91,5 +120,5 @@ button {}
     width: 40px;
     height: 28px;
 
-   
+
 }
