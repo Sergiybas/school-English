@@ -4,22 +4,53 @@
 
 .ml-fon {
     position: relative;
-    display: inline-flex;
-    height: 950px;
-    width: 1152px;
-    padding: 64px 312px 746px 64px;
+    display: block;
+    height: 737px;
+    max-width: 335px;
     flex-shrink: 0;
     border-radius: 30px;
     background: linear-gradient(85deg, #4DC274 2.25%, #BEE8CC 131.25%);
+    margin: 0px auto;
     margin-bottom: 150px;
-    margin:0px 40px 150px 40px;
+
+    @media screen and (min-width: 768px) {
+        & {
+            max-width: 704px;
+            height: 950px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            & {
+                max-width: 1152px;
+
+            }
+        }
+    }
 }
 
 .ml-h {
     color: #FFF;
-    font-size: 60px;
+    font-size: 38px;
     font-weight: 700;
-    line-height: 116.667%;
+    line-height: 105%;
+    padding-left: 20px;
+    padding-top: 40px;
+
+    @media screen and (min-width: 768px) {
+        & {
+            font-size: 60px;
+        }
+
+    }
+
+    @media screen and (min-width: 1280px) {
+        & {
+            width: 830px;
+            padding-top: 64px;
+            padding-left: 64px;
+            line-height: 117%;
+        }
+    }
 
 }
 
@@ -30,76 +61,172 @@
 
 .ml-fon-rotate-one {
     position: absolute;
-    width: 1011px;
-    height: 402px;
+
+    width: 295px;
+    height: 408px;
     left: 50%;
-    bottom: 50%;
-    transform: translateX(-50%) translateY(70%) rotate(11deg);
+    bottom: 64px;
+    transform: translateX(-50%) rotate(11deg);
     flex-shrink: 0;
     border-radius: 30px;
     background: rgba(255, 255, 255, 0.50);
     z-index: 1;
 
+    @media screen and (min-width: 768px) {
+        & {
+            width: 668px;
+            height: 500px;
+            bottom: 84px;
+            transform: rotate(10.655deg) translateX(-50%);
+
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        & {
+            width: 1011px;
+            height: 402px;
+            transform: rotate(11deg) translateX(-50%);
+
+        }
+    }
 }
 
 .ml-fon-rotate-two {
     position: absolute;
     left: 50%;
-    bottom: 50%;
-    width: 1050px;
-    height: 463px;
-    transform: rotate(-8deg) translateX(-54%) translateY(55%);
+    bottom: 64px;
+
+    width: 295px;
+    height: 408px;
+    transform: rotate(-9deg) translateX(-50%);
     flex-shrink: 0;
     border-radius: 30px;
     background: #D4FDE1;
     z-index: 3;
+
+    @media screen and (min-width: 768px) {
+        & {
+            width: 668px;
+            height: 500px;
+            bottom: 200px;
+            transform: rotate(-9.864deg) translateX(-50%);
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        & {
+            width: 1050px;
+            height: 463px;
+            transform: rotate(-8deg) translateX(-50%);
+
+        }
+    }
+
 }
 
 .ml-fon-rotate-three {
     position: absolute;
-
+    justify-content: flex-start;
     left: 50%;
-    bottom: 50%;
-    transform: translateX(-50%) translateY(70%);
-    width: 1024px;
-    height: 471px;
+    bottom: 64px;
+    transform: translateX(-50%);
+    width: 295px;
+    height: 408px;
     flex-shrink: 0;
     border-radius: 30px;
     background: #FFF;
     z-index: 4;
 
+    @media screen and (min-width: 768px) {
+        & {
+            width: 668px;
+            height: 500px;
+            bottom: 150px;
+        }
+    }
 
+    @media screen and (min-width: 1280px) {
+        & {
+            width: 1024px;
+            height: 471px;
+            bottom: 130px;
+
+        }
+    }
 }
 
 .ml-fon-rotate-h {
-    font-size: 40px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: 120px;
     letter-spacing: -0.8px;
-    margin-left: 64px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        & {
+            font-size: 40px;
+            margin-left: 32px;
+            margin-bottom: 32px;
+            padding-top: 24px;
+        }
+    }
+
+
 
 }
 
 .ml-paragrapf-list {
-
-    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
     letter-spacing: -0.4px;
-    margin-bottom: 39px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        & {
+            font-size: 20px;
+            margin-left: 22px;
+            margin-bottom: 32px;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        & {
+            margin-left: 55px;
+            margin-bottom: 36px;
+        }
+    }
 
 }
 
 .ml-paragrapf-items {
     display: flex;
     align-items: center;
-    gap: 14px;
-    margin-left: 70px;
+    gap: 8px;
+    margin-left: 10px;
 
     & p {
-        width: 570px;
+        width: 227px;
+
+        @media screen and (min-width: 768px) {
+            & {
+                width: 405px;
+
+            }
+        }
+
+        @media screen and (min-width: 1280px) {
+            & {
+                width: 610px;
+            }
+        }
     }
 }
 
@@ -113,27 +240,60 @@
 
 .ml-button {
     display: inline-flex;
-    padding: 16px 64px;
+    padding: 14px 64px;
     justify-content: center;
     align-items: center;
     border-radius: 12px;
     background: #4DC274;
     color: #FFF;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 155.556%;
-    margin-left: 64px;
+    margin: 0px;
+    margin-left: 10px;
+
+    &:hover,:focus,:active{
+        background-color: #38AE5F;
+    }
+
+    @media screen and (min-width: 768px) {
+        & {
+            margin-left: 32px;
+            font-size: 18px;
+            padding: 16px 64px;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        & {
+            margin-left: 64px;
+        }
+    }
 
 }
 
 .ml-books {
+    display: none;
     position: absolute;
     top: 128px;
-    right: 0px;
+    right: -50px;
     background-image: url(../img/books.png);
     max-width: 216px;
     max-height: 263px;
     width: 100%;
     height: 100%;
     z-index: 8;
+
+    @media screen and (min-width: 768px) {
+        & {
+            display: flex;
+
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        & {
+            right: 0px;
+        }
+    }
 }
