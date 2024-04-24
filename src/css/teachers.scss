@@ -1,0 +1,146 @@
+.teachers {}
+
+.teachers-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        & {
+            margin-bottom: 64px;
+        }
+    }
+
+}
+
+.teachers-title-head {
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 112.5%;
+    letter-spacing: -0.64px;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+        & {
+            font-size: 40px;
+            line-height: 120%;
+        }
+    }
+}
+
+.green {
+    position: relative;
+
+    &::after {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 20px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        background: #BEE8CC;
+        top: 28px;
+        right: 0;
+        z-index: -1;
+
+        @media screen and (min-width: 768px) {
+            & {
+                top: 35px;
+            }
+        }
+    }
+
+
+}
+
+.teachers-title-paragraf {
+    color: rgba(18, 20, 23, 0.50);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 171.429%;
+    max-width: 334px;
+
+    @media screen and (min-width: 768px) {
+        & {
+            max-width: 709px;
+            font-size: 18px;
+        }
+    }
+}
+
+.teachers-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 80px;
+
+    @media screen and (min-width: 768px) {
+        & {
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-bottom: 100px;
+            gap: 32px;
+
+        }
+    }
+
+}
+
+.teachers-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        & {
+            width: 272px;
+        }
+    }
+         @media screen and (min-width: 1280px){
+            &{
+                width: 232px;
+            }
+         }
+}
+
+.teachers-img {
+    margin-bottom: 16px;
+}
+
+.teachers-name {
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -0.4px;
+    margin-bottom: 8px;
+}
+
+.teachers-info {
+    color: rgba(18, 20, 23, 0.50);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 171.429%;
+
+    @media screen and (min-width: 768px) {
+        & {
+            max-width: 272px;
+            font-size: 16px;
+            line-height: 150%;
+        }
+    }
+
+}
