@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
   
   <script type="module" crossorigin src="/school-English/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/school-English/assets/index-cd9b65b5.css">
+  <link rel="stylesheet" href="/school-English/assets/index-0354527b.css">
 </head>
 
 <body>
@@ -211,7 +211,7 @@
         </ul>
     </div>
 </section>
-  <section class="application">
+  <section class="application" id="Leave an application">
     <div class="container">
         <div class="application-title">
             <h2 class="application-title-head">Leave an&nbsp;<span class="green">application</span></h2>
@@ -235,18 +235,29 @@
                     <label for="email"></label>
                     <input type="tel" name="tel" id="tel" placeholder="Phone">
                     <label for="tel"></label>
-                    <textarea name="feadback" id="feadback" cols="30" rows="10" placeholder="Comment"></textarea>
+                    <textarea name="feadback" id="feadback" cols="30" rows="" placeholder="Comment"></textarea>
                     <label for="feadback"></label>
                 </div>
                 <div class="radio-block">
-                    <input type="radio" name="teacher" id="maria" value="Maria">
-                    <label for="maria">Maria</label>
-                    <input type="radio" name="teacher" id="artem" value="Artem">
-                    <label for="artem">Artem</label>
-                    <input type="radio" name="teacher" id="ilona" value="Ilona">
-                    <label for="ilona">Ilona</label>
-                    <input type="radio" name="teacher" id="volodymyr" value="Volodymyr">
-                    <label for="volodymyr">Volodymyr</label>
+                    <span>Choose a teacher</span>            
+                    <div class="radio-block-list">
+                        <div>
+                            <input type="radio" name="teacher" id="maria" value="Maria">
+                            <label for="maria">Maria</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="teacher" id="artem" value="Artem">
+                            <label for="artem">Artem</label>
+                        </div>
+                       <div>
+                        <input type="radio" name="teacher" id="ilona" value="Ilona">
+                        <label for="ilona">Ilona</label>
+                       </div>
+                       <div>
+                        <input type="radio" name="teacher" id="volodymyr" value="Volodymyr">
+                        <label for="volodymyr">Volodymyr</label>
+                       </div>
+                    </div>
                 </div>
                 <button class="submit-button" type="submit">Send</button>
                 <p class="button-text">
