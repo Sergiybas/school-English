@@ -39,3 +39,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+:focus-visible {
+  outline-color: 0;
+  outline-style: 0;
+  outline-width: 0;
+}
