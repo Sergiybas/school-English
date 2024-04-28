@@ -172,39 +172,91 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 26px;
+}
 
-    & span {
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 120%;
-        letter-spacing: -0.4px;
-        margin-bottom: 16px;
+.radio-block-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.4px;
+    margin-bottom: 16px;
+}
+
+.form-data-label {
+    color: #121417;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 133.333%;
+    letter-spacing: -0.36px;
+    padding-right: 36px;
+    padding-left: 8px;
+
+}
 
 
+.radio-block-list {
+    display: flex;
+    gap: 30px;
 
+    & input {
+        opacity: 0;
     }
 
-    & label {
-        color: #121417;
-        text-align: center;
-        font-family: Manrope;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 133.333%;
-        letter-spacing: -0.36px;
-        padding-right: 36px;
-        padding-left: 8px;
+    @media screen and (max-width:767px) {
+        flex-direction: column;
+    }
+}
 
+.radio-block-item {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+
+}
+
+.radio-svg {
+    display: block;
+    position: absolute;
+    left: -29px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(../img/svg/Radiobutton.svg);
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    .radio-block-item:focus-within & {
+        opacity: 1;
     }
 
 }
 
-.radio-block-list {
+.radio-block-label {
+    position: relative;
     display: flex;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 133.333%;
+    letter-spacing: -0.36px;
 
-    @media screen and (max-width:767px) {
-        flex-direction: column;
+    &::before {
+        content: "";
+        position: absolute;
+        left: -27px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+        width: 20px;
+        height: 18px;
+        border-radius: 50%;
+        border: 2px solid rgba(18, 20, 23, 0.20);
     }
 }
 
