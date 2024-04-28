@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
   
   <script type="module" crossorigin src="/school-English/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/school-English/assets/index-95ab1920.css">
+  <link rel="stylesheet" href="/school-English/assets/index-8e8ec73f.css">
 </head>
 
 <body>
@@ -43,7 +43,7 @@
                         </svg>
                     </a>
                 </div>
-                <button class="menu">
+                <button class="menu js-open-menu">
                     <svg class="menu-svg" width="40" height="40">
                         <use href="/school-English/assets/symbol-defs-72288759.svg#menu"></use>
                     </svg>
@@ -219,44 +219,53 @@
                 message and we'll get back to you shortly.</p>
         </div>
         <div class="img-form-block">
-            <div class="fon-img">  
-                <div class="application-img"></div>                       
+            <div class="fon-img">
+                <div class="application-img"></div>
                 <div class="application-fon">
                     <span class="fon-title">1000</span>
-                    <p class="fon-paragraf">of our online English language lessons! This journey has been full of discovery, growth and unforgettable moments, and
-                    we are happy to share this joyful event with you.</p>
+                    <p class="fon-paragraf">of our online English language lessons! This journey has been full of
+                        discovery, growth and unforgettable moments, and
+                        we are happy to share this joyful event with you.</p>
                 </div>
             </div>
             <form action="" class="form">
                 <div class="form-data">
                     <input type="name" name="name" id="name" placeholder="Name">
-                    <label for="name"></label>
+                    <label class="form-data-label" for="name"></label>
                     <input type="email" name="Email" id="email" placeholder="Email">
-                    <label for="email"></label>
+                    <label class="form-data-label" for="email"></label>
                     <input type="tel" name="tel" id="tel" placeholder="Phone">
-                    <label for="tel"></label>
+                    <label class="form-data-label" for="tel"></label>
                     <textarea name="feadback" id="feadback" cols="30" rows="" placeholder="Comment"></textarea>
-                    <label for="feadback"></label>
+                    <label class="form-data-label" for="feadback"></label>
                 </div>
                 <div class="radio-block">
-                    <span>Choose a teacher</span>            
+                    <span class="radio-block-title">Choose a teacher</span>
                     <div class="radio-block-list">
-                        <div>
+                        <div class="radio-block-item">
                             <input type="radio" name="teacher" id="maria" value="Maria">
-                            <label for="maria">Maria</label>
+                            <label class="radio-block-label" for="maria">Maria
+                                <span class="radio-svg" id=""></span>
+                            </label>
                         </div>
-                        <div>
+                        <div class="radio-block-item">
                             <input type="radio" name="teacher" id="artem" value="Artem">
-                            <label for="artem">Artem</label>
+                            <label class="radio-block-label" for="artem">Artem
+                                <span class="radio-svg" id=""></span>
+                            </label>
                         </div>
-                       <div>
-                        <input type="radio" name="teacher" id="ilona" value="Ilona">
-                        <label for="ilona">Ilona</label>
-                       </div>
-                       <div>
-                        <input type="radio" name="teacher" id="volodymyr" value="Volodymyr">
-                        <label for="volodymyr">Volodymyr</label>
-                       </div>
+                        <div class="radio-block-item">
+                            <input type="radio" name="teacher" id="ilona" value="Ilona">
+                            <label class="radio-block-label" for="ilona">Ilona
+                                <span class="radio-svg" id=""></span>
+                            </label>
+                        </div>
+                        <div class="radio-block-item">
+                            <input type="radio" name="teacher" id="volodymyr" value="Volodymyr">
+                            <label class="radio-block-label" for="volodymyr">Volodymyr
+                                <span class="radio-svg" id=""></span>
+                            </label>
+                        </div>
                     </div>
                 </div>
                 <button class="submit-button" type="submit">Send</button>
@@ -264,7 +273,7 @@
                     By clicking on “Send” button, you agree to our Privacy Policy,
                     and allow Promodo to use this information for marketing purposes.
                 </p>
-        
+
             </form>
         </div>
     </div>
@@ -360,6 +369,37 @@
         </div>
     </div>
 </footer>
+  <div class="menu-container js-menu-container" id="mobil-menu">
+    <button type="button" class="menu-toggle js-close-menu">
+        <svg class="menu-close">
+            <use href="../img/symbol-defs.svg#close"></use>
+        </svg>
+    </button>
+    <div class="menu-nav">
+        <a class="nav-item" href="#aboutUs">About us</a>
+        <a class="nav-item" href="#ourlessons">Our lessons</a>
+        <a class="nav-item" href="#teachers">Teachers</a>
+        <a class="nav-item" href="">Reviews</a>
+        <a class="nav-item" href="#footer">Contact us</a>
+    </div>
+    <div class="menu-social">
+        <a class="menu-social-href" href="https://www.facebook.com/goITclub/ ">
+            <svg class="menu-social-svg">
+                <use href="/school-English/assets/symbol-defs-72288759.svg#facebook"></use>
+            </svg>
+        </a>
+        <a class="menu-social-href" href="https://www.instagram.com/goitclub/ ">
+            <svg class="menu-social-svg">
+                <use href="/school-English/assets/symbol-defs-72288759.svg#instagram"></use>
+            </svg>
+        </a>
+        <a class="menu-social-href" href="https://www.youtube.com/c/GoIT ">
+            <svg class="menu-social-svg">
+                <use href="/school-English/assets/symbol-defs-72288759.svg#youtube"></use>
+            </svg>
+        </a>
+    </div>
+</div>
 
   
 </body>
