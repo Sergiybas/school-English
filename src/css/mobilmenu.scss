@@ -10,7 +10,8 @@
     margin: auto;
     width: 240px;
     height: 812px;
-
+    overflow: scroll;
+    overflow-x: hidden;
     z-index: 999;
     transition: transform 250ms;
     background: #4DC274;
@@ -26,59 +27,59 @@
     }
 }
 
-    .menu-toggle {
-        position: absolute;
-        top: 8px;
-        right: 8px;
-        width: 32px;
-        height: 32px;
-        flex-shrink: 0;
-    }
+.menu-toggle {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
 
-    .js-close-menu {}
+.js-close-menu {}
 
-    .menu-close {
-        width: 32px;
-        height: 32px;
-        flex-shrink: 0;
-    }
+.menu-close {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
 
-    .menu-nav {
-        display: flex;
-        flex-direction: column;
-        color: #FFF;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 128.571%;
-        gap: 20px;
-        padding-bottom: 330px;
-
-
-    }
-
-    .nav-item {}
-
-    .menu-social {
-        display: flex;
-        gap: 12px;
-        padding-bottom: 20px;
-    }
-
-    .menu-social-href {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 8px;
-        border-radius: 10px;
-        width: 40px;
-        height: 40px;
-        border: 1px solid rgba(255, 255, 255, 0.10);
-    }
+.menu-nav {
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 128.571%;
+    gap: 20px;
+    padding-bottom: 330px;
 
 
-    .menu-social-svg {
-        height: 28px;
-        width: 28px;
-        fill: #FFF;
-    }
+}
+
+.nav-item {}
+
+.menu-social {
+    display: flex;
+    gap: 12px;
+    padding-bottom: 20px;
+}
+
+.menu-social-href {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+
+.menu-social-svg {
+    height: 28px;
+    width: 28px;
+    fill: #FFF;
+}

@@ -117,8 +117,7 @@
         border: 1px solid rgba(255, 255, 255, 0.40);
 
         &:hover,
-        :active,
-        :focus {
+        &:focus-within {
             background-color: #FFF;
             color: #4DC274;
         }
@@ -172,9 +171,9 @@
     line-height: 155.556%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    :active,
-    :focus {
+    &:focus-within,
+    &:hover
+    {
         background-color: #38AE5F;
     }
 
